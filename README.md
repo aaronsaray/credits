@@ -7,7 +7,7 @@ This repository holds the signature I add to my projects.
 Use this compressed JS
 
 ```javascript
-!function(r){var t=r.querySelector(".credits-as");t&&t.addEventListener("dblclick",function(t){if(!r.getElementById("credits-as-script")){var e=r.createElement("script");e.setAttribute("id","credits-as-script"),e.type="text/javascript",e.src="https://aaronsaray.github.io/credits/credits-as.js",r.querySelector("head").appendChild(e)}})}(document);
+!function(i){var t=i.querySelector(".credits-as"),r=!1;t&&t.addEventListener("click",function(t){if(r){if(!i.getElementById("credits-as-script")){var e=i.createElement("script");e.setAttribute("id","credits-as-script"),e.type="text/javascript",e.src="https://aaronsaray.github.io/credits/credits-as.js",i.querySelector("head").appendChild(e)}}else r=!0,setTimeout(function(){r=!1},500)})}(document);
 ```
 
 This targets a `double click` on the `credits-as` class element.
